@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Armata&display=swap');
+body{
+	font-family: 'Armata', sans-serif;
+	margin:0;
+	padding: 0;
+}
+.wrapper{
+	height: 100vh;
+	width: 100vw;
+	background-color: #090929;
+}
+.container{
+	border-radius: 30px;
+	background: #0e0e41;
+	box-shadow: inset 35px 35px 70px #0c0c37, 
+     	       inset -35px -35px 70px #10104b;
+	width: 400px;
+	height: 500px;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+
+
+}
+.display{
+	position: relative;
+	border-radius: 10px 10px 0 0;
+	left: 0;
+	height: 25%;
+	width: 100%;
+	padding: 0px;
+	/*background-color: hsla(189deg, 86%, 75%,0.5);*/
+}
+.history{
+	position: relative;
+
+	top: 0;
+	left: 0;
+	height: 30%;
+	text-align: right;
+	/*background-color: hsla(189deg, 86%, 80%,0.5);*/
+	border-radius: 10px 10px 0 0;
+}
+#htext{
+	position: relative;
+	top: 25%;
+	padding-right: 30px;
+	color: rgba(255,255,255,0.5);
+	font-size: 22px;
+}
+.result{
+	position: relative;
+	top: 0px;
+	text-align: right;
+	height: 70%;	
+}
+#rtext{
+	position: relative;
+	top: -20px;
+	font-size: 50px;
+	padding-right: 20px;
+	color: #FFF;
+}
+.buttons{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 10px;
+	font-family: 'Armata', sans-serif;
+
+}
+button{
+	border-style: none;
+	height: 65px;
+	width: 65px;
+	border: none;
+	position: relative;
+	top: 5px;
+	font-family: 'Armata', sans-serif;
+	font-size: 23px;
+	text-align: center;
+	left: 50%;
+	border-radius: 50%;
+	color: #fff;
+	font-weight: bold;
+	transform: translate(-50%,0);
+}
+button:focus, button:active{
+	outline: 0;
+}
+.number:active{
+	box-shadow: none;
+
+	color: #7df9ff;
+}
+.operator:active{
+	box-shadow: none;
+	background-color: #1c1c80;
+	color: #7df9ff;
+}
+.number, .operator{
+	cursor: pointer;
+}
+.number {
+	border-radius: 50px;
+	background: #0e0e41;
+	box-shadow:  35px 35px 70px #0c0c37, 
+             -35px -35px 70px #10104b;
+}
+.blnk{
+	background: none;
+}
+.operator{
+	border-radius: 50px;
+	background: linear-gradient(225deg, #191973, #1e1e89);
+	box-shadow:  35px 35px 70px #0c0c37, 
+             -35px -35px 70px #10104b;
+}
+#eq{
+	background-color: #0e153a;
+}

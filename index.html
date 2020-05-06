@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="calcstyle.css">
+</head>
+<body>
+	<script type="text/javascript" src="calcscript.js" defer></script>
+	<div class="wrapper">
+		<div class="container">
+			<div class="display">
+				<div class="history">
+					<p id="htext">
+						
+					</p>
+				</div>
+				<div class="result">
+					<p id="rtext">
+						
+					</p>
+					
+				</div>
+
+			</div>
+			<div class="buttons">
+				<button id="C" class="operator" onclick="operpress(this.id)">
+					C
+				</button>
+				<button id="CE" class="operator" onclick="operpress(this.id)">
+					CE
+				</button>
+				<button id="bksp" class="operator" onclick="operpress(this.id)">
+					<
+				</button>
+				<button id="+" class="operator" onclick="operpress(this.id)">
+					+
+				</button>
+				<button id="7" class="number" onclick="numberpress(this.id)">
+					7
+				</button>
+				<button id="8" class="number" onclick="numberpress(this.id)">
+					8
+				</button>
+				<button id="9" class="number" onclick="numberpress(this.id)">
+					9
+				</button>
+				<button id="-" class="operator" onclick="operpress(this.id)">
+					-
+				</button>
+				<button id="4" class="number" onclick="numberpress(this.id)">
+					4
+				</button>
+				<button id="5" class="number" onclick="numberpress(this.id)">
+					5
+				</button>
+
+				<button id="6" class="number" onclick="numberpress(this.id)">
+					6
+				</button>
+				<button id="*" class="operator" onclick="operpress(this.id)">
+					*
+				</button>
+				<button id="1" class="number" onclick="numberpress(this.id)">
+					1
+				</button>
+				<button id="2" class="number" onclick="numberpress(this.id)">
+					2
+				</button>
+				<button id="3" class="number" onclick="numberpress(this.id)">
+					3
+				</button>
+				<button id="/" class="operator" onclick="operpress(this.id)">
+					/
+				</button>
+				<button id="blank" class="blnk">
+					
+				</button>
+				<button id="0" class="number" onclick="numberpress(this.id)">
+					0
+				</button>
+				<button id="blank" class="blnk">
+					
+				</button>
+				<button id="eq" class="operator" onclick="operpress(this.id)">
+					=
+				</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
